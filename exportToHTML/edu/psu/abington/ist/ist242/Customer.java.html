@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Customer.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Customer.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">edu.psu.abington.ist.ist242</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">java.util.ArrayList</span><span class="s0">;</span>
+<span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">Customer {</span>
+    <span class="s2">//Class Level Variables - Protect the data</span>
+    <span class="s0">private int </span><span class="s1">customerId</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String customerName</span><span class="s0">;</span>
+    <span class="s0">private </span><span class="s1">String customerPhoneNumber</span><span class="s0">;</span>
+
+    <span class="s2">//Constructor Method</span>
+    <span class="s0">public </span><span class="s1">Customer(</span><span class="s0">int </span><span class="s1">_customerId) {</span>
+        <span class="s0">this</span><span class="s1">. customerId = _customerId</span><span class="s0">;  </span><span class="s2">//Increments the ID count</span>
+    <span class="s1">}</span>
+
+    <span class="s2">//Setters and Getters</span>
+    <span class="s0">public int </span><span class="s1">getCustomerId() { </span><span class="s0">return </span><span class="s1">customerId</span><span class="s0">; </span><span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">setCustomerId(</span><span class="s0">int </span><span class="s1">_customerId) {</span><span class="s0">this</span><span class="s1">.customerId = _customerId</span><span class="s0">;</span><span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerName() { </span><span class="s0">return </span><span class="s1">customerName</span><span class="s0">; </span><span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">setCustomerName(String _customerName) {</span><span class="s0">this</span><span class="s1">.customerName = _customerName</span><span class="s0">;</span><span class="s1">}</span>
+
+    <span class="s0">public </span><span class="s1">String getCustomerPhoneNumber() { </span><span class="s0">return </span><span class="s1">customerPhoneNumber</span><span class="s0">; </span><span class="s1">}</span>
+    <span class="s0">public void </span><span class="s1">setCustomerPhoneNumber(String _customerPhoneNumber) {</span><span class="s0">this</span><span class="s1">.customerPhoneNumber = _customerPhoneNumber</span><span class="s0">;</span><span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">printCustomer(ArrayList&lt;Customer&gt; cList){</span>
+        <span class="s0">for </span><span class="s1">(Customer cust: cList){</span>
+            <span class="s1">System.out.println(</span><span class="s3">&quot;Customer Id:&quot; </span><span class="s1">+ cust.getCustomerId())</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s3">&quot;Customer Name:&quot; </span><span class="s1">+ cust.getCustomerName())</span><span class="s0">;</span>
+            <span class="s1">System.out.println(</span><span class="s3">&quot;Customer Phone:&quot; </span><span class="s1">+ cust.getCustomerPhoneNumber())</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span></pre>
+</body>
+</html>
